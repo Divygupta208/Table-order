@@ -22,9 +22,11 @@ function App() {
   };
 
   const removeItemHandler = (id) => {
-    setTable((prev) => {
-      return [prev.filter((item) => item.id === id)];
+    const newItems = [...table].filter((item) => {
+      return item.id !== id;
     });
+
+    setTable(newItems);
     localStorage.removeItem(id);
   };
 

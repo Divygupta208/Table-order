@@ -33,7 +33,7 @@ const Input = ({ setItems }) => {
       <Card className={classes.input}>
         <form onSubmit={onFormSubmit}>
           <div className="main">
-            <label for="unique_id">Unique ID</label>
+            <label for="unique_id">Unique_Order_ID</label>
             <input ref={id} type="number" id="unique_id" />
             <label for="price">choose price</label>
             <input ref={price} type="number" id="price" />
